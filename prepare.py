@@ -23,7 +23,7 @@ def prepare(df):
 #sort rows by the date and then set the index as that date
     df = df.set_index('date').sort_index()
 #filters 50 years
-    df = df.loc['1963-09-01':'2013-09-01']
+    df = df.loc['1963-08-01':'2013-08-01']
 #converting celcius to fahrenheit
     df.avg_temp = df.avg_temp * 1.800 + 32.00
     df.avgtemp_uncertainty = df.avgtemp_uncertainty * 1.800 + 32.00
