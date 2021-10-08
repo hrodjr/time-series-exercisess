@@ -18,10 +18,14 @@ def save_csv(location):
     to_csv(location)
 
 #concats dfs
-def put_together(dfs):
+def put_together(df):
     pd.concat(df, gnore_index=True)
 
 #read csv from specified location
 def opencsv(location):
     pd.read_csv(location)
     
+#specifically for time series e2e exercise
+def opene2e():
+    df = pd.read_csv('/Users/hector/codeup-data-science/time-series-exercisess/GlobalLandTemperaturesByCity.csv')
+    return df
